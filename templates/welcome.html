@@ -1,0 +1,15 @@
+$def with (mbed_data)
+
+<h1>Car Counter</h1>
+<p>Data from MBED is displayed here.</p>
+
+<p>
+$if mbed_data:
+    $mbed_data
+    <br>
+    Temp: $mbed_data['temp']
+    <br>
+$else:
+    Nothing recieved!
+
+</p>
